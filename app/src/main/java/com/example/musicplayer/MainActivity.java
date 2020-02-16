@@ -21,10 +21,7 @@ public class MainActivity extends AppCompatActivity {
         Button up = (Button) findViewById(R.id.upVolume);
         Button down = (Button) findViewById(R.id.downVolume);
 
-        final int test = 1;
-        final int testt = -1;
-        final int testOne = test + 1;
-        final int testTwo = test - 1;
+
 
         final int maxVolume  = 50;
         final int currVolume = 1;
@@ -33,18 +30,18 @@ public class MainActivity extends AppCompatActivity {
 
         final MediaPlayer mediaPlayer = MediaPlayer.create(this, R.raw.song);
 
-        playButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                mediaPlayer.start();
-                mediaPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
-                    @Override
-                    public void onCompletion(MediaPlayer mp) {
-                        Toast.makeText(MainActivity.this, "I`m done", Toast.LENGTH_SHORT).show();
-                    }
-                });
-            }
-        });
+//        playButton.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                mediaPlayer.start();
+//                mediaPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+//                    @Override
+//                    public void onCompletion(MediaPlayer mp) {
+//                        Toast.makeText(MainActivity.this, "I`m done", Toast.LENGTH_SHORT).show();
+//                    }
+//                });
+//            }
+//        });
 
 
         pauseButton.setOnClickListener(new View.OnClickListener() {
@@ -69,29 +66,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-//        up.setOnTouchListener(new View.OnTouchListener() {
-//            @Override
-//            public boolean onTouch(View v, MotionEvent event) {
-//
-//                if (event.getAction() == MotionEvent.ACTION_BUTTON_PRESS) {
-//                    mediaPlayer.setVolume(test, test);
-//                    return true;
-//                }
-//                return false;
-//            }
-//        });
-//
-//        down.setOnTouchListener(new View.OnTouchListener() {
-//            @Override
-//            public boolean onTouch(View v, MotionEvent event) {
-//
-//                if (event.getAction() == MotionEvent.ACTION_BUTTON_PRESS) {
-//                    mediaPlayer.setVolume(testt, testt);
-//                    return true;
-//                }
-//                return false;
-//            }
-//        });
+
 
 
     }
