@@ -54,7 +54,7 @@ public class MainActivity extends AppCompatActivity {
         up.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                mediaPlayer.setVolume(log1,log1);
+              //  mediaPlayer.setVolume(log1,log1);
 
             }
         });
@@ -62,7 +62,7 @@ public class MainActivity extends AppCompatActivity {
         down.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                mediaPlayer.setVolume(testt, testt);
+               // mediaPlayer.setVolume(testt, testt);
             }
         });
 
