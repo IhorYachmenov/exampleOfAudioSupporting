@@ -18,8 +18,7 @@ public class MainActivity extends AppCompatActivity {
 
         Button playButton = (Button) findViewById(R.id.play);
         Button pauseButton = (Button) findViewById(R.id.pause);
-        Button up = (Button) findViewById(R.id.upVolume);
-        Button down = (Button) findViewById(R.id.downVolume);
+
 
 
 
@@ -50,22 +49,6 @@ public class MainActivity extends AppCompatActivity {
                 mediaPlayer.pause();
             }
         });
-
-        up.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-              //  mediaPlayer.setVolume(log1,log1);
-
-            }
-        });
-
-        down.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-               // mediaPlayer.setVolume(testt, testt);
-            }
-        });
-
 
 
 
